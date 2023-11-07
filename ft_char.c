@@ -6,12 +6,11 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:16:29 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/07 07:29:48 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/07 07:38:12 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include "stsdio"
 
 void	ft_char(char c)
 
