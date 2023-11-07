@@ -6,6 +6,7 @@ ft_char.c\
 ft_nbr.c\
 ft_str.c\
 ft_hexd.c\
+hay ccambios\
 ft_simbol.c\
 
 
