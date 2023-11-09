@@ -6,29 +6,42 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:20:45 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/07 07:38:37 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/09 21:34:50 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include <unistd.h>
+#include <stdio.h>
 
-void	ft_str(char *str)
+int	ft_str(char *str)
 
 {
 	int	i;
 
 	i = 0;
+	if (str == NULL)
+	{
+		i = ft_str("(null)");
+		return (i);
+	}
+
 	while (str[i] != '\0')
 	{
 		write(1, &str[i], 1);
 		i++;
 	}
+	return (i);
 }
 
 int	main(void)
 
 {
-	ft_str("Hola Guapos");
+	char *str = NULL;
+	int x = 0;
+	ft_str(NULL);
+ x = printf("%s", str);
+ printf("%i", x);
+
 	return (0);
 }
 

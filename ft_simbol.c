@@ -6,8 +6,16 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 11:33:36 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/07 07:38:33 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/09 21:50:09 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+int	ft_simbol(void);
+
+int	main(void)
+{
+	printf("%%prueba");
+	return (0);
+}
