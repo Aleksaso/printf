@@ -6,12 +6,13 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:20:45 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/09 21:34:50 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/13 15:55:32 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
+#include "ft_printf.h"
 
 int	ft_str(char *str)
 

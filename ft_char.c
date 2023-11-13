@@ -6,12 +6,13 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:16:29 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/09 22:09:23 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/13 15:56:45 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
+#include "ft_printf.h"
 
 int	ft_char(char c)
 
@@ -24,7 +25,7 @@ int	main(void)
 {
 	int x;
 	x = ft_char('c');
-	printf("%i", x);
+	printf("%i\n", x);
 }
 
 /*void	ft_char(char c, int *ptr)

@@ -6,10 +6,12 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 20:22:00 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/09 22:27:01 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/13 15:56:27 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
+#include <stdio.h>
 #include "ft_printf.h"
 
 int	ft_hexdma( )

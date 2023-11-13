@@ -3,10 +3,14 @@ NAME = libftprintf.a
 
 SRC = ft_printf.c\
 ft_char.c\
-ft_nbr.c\
-ft_str.c\
-ft_hexd.c\
+ft_etri.c\
+ft_hexdma.c\
+ft_hexdmi.c\
+ft_nbrd.c\
+ft_nbru.c\
+ft_ptro.c\
 ft_simbol.c\
+ft_str.c\
 
 
 OBJS = $(SRC:.c=.o)

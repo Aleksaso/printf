@@ -6,14 +6,16 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:14:07 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/09 14:30:43 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/13 15:55:56 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
+#include <stdio.h>
 #include "ft_printf.h"
 
 int ft_control( )
 
 {
-	
+
 }
