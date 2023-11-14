@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 22:36:27 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/13 17:28:00 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/14 20:09:12 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,4 @@
 #include <stdio.h>
 #include "ft_printf.h"
 
-int	ft_etri( )
-{
-	
-}
+int	ft_etri(void);

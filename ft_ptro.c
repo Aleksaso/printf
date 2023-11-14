@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:21:21 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/13 15:55:46 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/14 20:23:02 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,4 @@
 #include <stdio.h>
 #include "ft_printf.h"
 
-int	ft_ptro( )
-{
-
-}
+int	ft_ptro();
