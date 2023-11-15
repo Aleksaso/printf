@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:16:51 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/14 19:40:56 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/15 10:37:19 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ int	ft_nbru(unsigned int nb)
 
 int	main(void)
 {
-	printf("%u", -897);
-	ft_nbru(-897);
+	//printf("%u\n", 897);
+	printf("\n%u\n", ft_nbru(897));
+	return (0);
 }
