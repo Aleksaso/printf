@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:14:07 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/16 11:50:23 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/16 13:28:02 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,12 @@ int	ft_controlcenter(va_list	args, char type)
 
 	contador = 0;
 	if (type == 'c')
-		contador += ft_char(va_arg(args, char));
+		char_value = va_arg(args, int);
+	contador += ft_char(char_value);
 	else if (type == 'i')
 		contador += ft_etri(va_arg(args, int));
 	else if (type == 'x' || type == 'X')
-		contador += ft_hexdma(va_arg(args, unsigned int *), type);
+		contador += ft_hexdma(*(va_arg(args, unsigned int *)), type);
 	else if (type == 'd')
 		contador += ft_nbrd(va_arg(args, int));
 	else if (type == 'u')
@@ -41,8 +42,8 @@ int	ft_controlcenter(va_list	args, char type)
 
 int	ft_printf(char const *str, ...)
 {
-	int	i;
-	int	total;
+	int		i;
+	int		total;
 	va_list	args;
 
 	va_start(args, str);
@@ -76,3 +77,4 @@ int	ft_printf(char const *str, ...)
 // 	ft_printf("%i %d \n", 184, 18);
 // 	printf("%p %p \n", (void *)-184, (void *)184);
 // }
+//contador += ft_char(va_arg(args, char));
