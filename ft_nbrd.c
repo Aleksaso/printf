@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 22:33:18 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/15 10:43:43 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:53:51 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,9 @@ int	ft_nbrd(int nb)
 	ft_char (nb + '0');
 }
 
-int	main(void)
-{
-	int nb = 555;
-	printf("\nresultado es: %d\n", ft_nbrd(nb));
-	return (0);
-}
+// int	main(void)
+// {
+// 	int	nb = 555;
+// 	printf("\nresultado es: %d\n", ft_nbrd(nb));
+// 	return (0);
+// }

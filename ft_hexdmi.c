@@ -6,13 +6,12 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 20:22:00 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/15 14:38:45 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:56:16 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#include <unistd.h>
-#include <stdio.h>
+//#include <unistd.h>
+//#include <stdio.h>
 #include "ft_printf.h"
 
 int	ft_char(char c)
@@ -37,11 +36,11 @@ int	ft_hexdmi(unsigned int n, char type)
 	ft_char(base[n % 16]);
 }
 
-int main()
-{
-	int num = 232;
-	//printf(" El resultado es: ");
-	ft_hexdmi(num, 'x');
-	printf("\n");
-	return (0);
-}
+// int	main(void)
+// {
+// 	int num = 232;
+// 	//printf(" El resultado es: ");
+// 	ft_hexdmi(num, 'x');
+// 	printf("\n");
+// 	return (0);
+// }

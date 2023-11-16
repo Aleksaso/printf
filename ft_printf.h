@@ -6,13 +6,14 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:13:57 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/15 20:47:09 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/16 11:05:23 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
+# include <stdarg.h>
 # include <unistd.h>
 # include <stdio.h>
 

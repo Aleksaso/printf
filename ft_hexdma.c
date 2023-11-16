@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 20:22:00 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/15 14:39:40 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:54:25 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,11 @@ int	ft_hexdma(unsigned int n, char type)
 	ft_char(base[n % 16]);
 }
 
-int main()
-{
-	int num = 232;
-	//printf(" El resultado es: ");
-	ft_hexdma(num, 'X');
-	printf("\n");
-	return (0);
-}
+// int	main(void)
+// {
+// 	int	num = 232;
+// 	//printf(" El resultado es: ");
+// 	ft_hexdma(num, 'X');
+// 	printf("\n");
+// 	return (0);
+// }

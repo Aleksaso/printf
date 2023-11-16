@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 22:36:27 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/15 10:54:34 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:54:17 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,9 @@ int	ft_etri(int numero)
 	ft_char (numero + '0');
 }
 
-int	main(void)
-{
-	int numero = 22;
-	printf("\nresultado es: %i\n", ft_etri(numero));
-	return (0);
-}
+// int	main(void)
+// {
+// 	int	numero = 22;
+// 	printf("\nresultado es: %i\n", ft_etri(numero));
+// 	return (0);
+// }

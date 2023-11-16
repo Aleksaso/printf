@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 11:33:36 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/15 11:21:41 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:55:03 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ int	ft_simbol(void)
 	return (1);
 }
 
-int	main(void)
-{
-	printf("imprimir símbolo: %%");
-	printf("\n");
-	return (1);
-}
+// int	main(void)
+// {
+// 	printf("imprimir símbolo: %%");
+// 	printf("\n");
+// 	return (1);
+// }

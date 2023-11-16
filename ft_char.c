@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:16:29 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/13 15:56:45 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:54:10 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,12 @@ int	ft_char(char c)
 	return (1);
 }
 
-int	main(void)
-{
-	int x;
-	x = ft_char('c');
-	printf("%i\n", x);
-}
+// int	main(void)
+// {
+// 	int	x;
+// 	x	=	ft_char('c');
+// 	printf("%i\n", x);
+// }
 
 /*void	ft_char(char c, int *ptr)
 

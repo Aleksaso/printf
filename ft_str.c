@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:20:45 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/13 15:55:32 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:59:52 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ int	ft_str(char *str)
 		i = ft_str("(null)");
 		return (i);
 	}
-
 	while (str[i] != '\0')
 	{
 		write(1, &str[i], 1);
@@ -34,15 +33,14 @@ int	ft_str(char *str)
 	return (i);
 }
 
-int	main(void)
+// int	main(void)
 
-{
-	char *str = NULL;
-	int x = 0;
-	ft_str(NULL);
- x = printf("%s", str);
- printf("%i", x);
+// {
+// 	char	*str = NULL;
+// 	int	x = 0;
+// 	ft_str(NULL);
+//  x = printf("%s", str);
+//  printf("%i", x);
 
-	return (0);
-}
-
+// 	return (0);
+// }
