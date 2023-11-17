@@ -6,10 +6,12 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:14:07 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/16 13:28:02 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/17 10:29:46 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "my_header.h"
+#include "./path/tomy_header.h"
 #include <unistd.h>
 #include <stdio.h>
 #include <stdarg.h>
@@ -21,8 +23,7 @@ int	ft_controlcenter(va_list	args, char type)
 
 	contador = 0;
 	if (type == 'c')
-		char_value = va_arg(args, int);
-	contador += ft_char(char_value);
+		contador += ft_char(va_arg(args, int));
 	else if (type == 'i')
 		contador += ft_etri(va_arg(args, int));
 	else if (type == 'x' || type == 'X')
@@ -77,4 +78,5 @@ int	ft_printf(char const *str, ...)
 // 	ft_printf("%i %d \n", 184, 18);
 // 	printf("%p %p \n", (void *)-184, (void *)184);
 // }
-//contador += ft_char(va_arg(args, char));
+// {char_value = va_arg(args, int);
+// contador += ft_char(char_value);}

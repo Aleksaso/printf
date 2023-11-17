@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:13:57 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/16 11:05:23 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/17 08:35:18 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <stdio.h>
 
 int	ft_printf(char const *str, ...);
-int	ft_char(char c);
+int	ft_char(int c);
 int	ft_etri(int numero);
 int	ft_hexdma(unsigned int n, char type);
 int	ft_hexdmi(unsigned int n, char type);

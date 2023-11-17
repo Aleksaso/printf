@@ -6,13 +6,13 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 20:22:00 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/16 10:54:25 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/17 10:26:36 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
 #include "ft_printf.h"
+#include <stdio.h>
+#include <unistd.h>
 
 int	ft_char(char c)
 
@@ -24,16 +24,23 @@ int	ft_char(char c)
 int	ft_hexdma(unsigned int n, char type)
 {
 	char	*base;
+	int		chars_printed;
 
-	if (type == 'X')
+	chars_printed = 0;
+	if (type == 'X' && type != 'x')
+	{
+		return (-1);
+	}
+	if (type == 'X' && type != 'x')
 		base = "0123456789ABCDEF";
 	else
 		base = "0123456789abcdef";
 	if (n > 15)
 	{
-		ft_hexdma(n / 16, type);
+		chars_printed += ft_hexdma(n / 16, type);
 	}
-	ft_char(base[n % 16]);
+	chars_printed += ft_char(base[n % 16]);
+	return (chars_printed);
 }
 
 // int	main(void)

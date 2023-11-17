@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 22:36:27 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/16 10:54:17 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/17 08:51:12 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include "ft_printf.h"
 
-int	ft_char(char c)
+int	ft_char(int c)
 {
 	write(1, &c, 1);
 	return (10);
@@ -29,7 +29,12 @@ int	ft_etri(int numero)
 		ft_etri(numero / 10);
 		numero %= 10;
 	}
+	else
+	{
+		return (10);
+	}
 	ft_char (numero + '0');
+	return (0);
 }
 
 // int	main(void)
