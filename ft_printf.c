@@ -6,12 +6,12 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:14:07 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/17 10:29:46 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/17 11:01:28 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "my_header.h"
-#include "./path/tomy_header.h"
+#include "/ruta/absoluta/a/my_header.h"
 #include <unistd.h>
 #include <stdio.h>
 #include <stdarg.h>

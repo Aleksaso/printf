@@ -6,13 +6,16 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:16:29 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/17 09:17:06 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/17 11:02:01 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include "ft_printf.h"
+#ifndef MY_HEADER_H
+# define MY_HEADER_H
+
+# include <unistd.h>
+# include <stdio.h>
+# include "ft_printf.h"
 
 int	ft_char(int c)
 
@@ -20,6 +23,8 @@ int	ft_char(int c)
 	write(1, &c, 1);
 	return (1);
 }
+
+#endif // MY_HEADER_H
 
 // int	main(void)
 // {
