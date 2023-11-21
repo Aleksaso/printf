@@ -6,12 +6,10 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:14:07 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/17 11:01:28 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/19 00:53:58 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "my_header.h"
-#include "/ruta/absoluta/a/my_header.h"
 #include <unistd.h>
 #include <stdio.h>
 #include <stdarg.h>
@@ -40,6 +38,13 @@ int	ft_controlcenter(va_list	args, char type)
 		contador += ft_str(va_arg(args, char *));
 	return (contador);
 }
+
+// int	ft_char(char c)
+
+// {
+// 	write(1, &c, 1);
+// 	return (1);
+// }
 
 int	ft_printf(char const *str, ...)
 {

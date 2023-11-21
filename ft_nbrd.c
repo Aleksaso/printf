@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 22:33:18 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/17 08:38:06 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/19 00:53:03 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 #include <stdio.h>
 #include "ft_printf.h"
 
-int	ft_char(char c)
-{
-	write(1, &c, 1);
-	return (10);
-}
+// int	ft_char(char c)
+// {
+// 	write(1, &c, 1);
+// 	return (10);
+// }
 
 int	ft_nbrd(int nb)
 {
@@ -30,6 +30,7 @@ int	ft_nbrd(int nb)
 		nb %= 10;
 	}
 	ft_char (nb + '0');
+	return (0);
 }
 
 // int	main(void)
