@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:14:07 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/19 00:53:58 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/21 20:29:52 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,23 @@
 #include <stdarg.h>
 #include "ft_printf.h"
 
+int	nblen(int nb)
+{
+	int	len;
+
+	len = 1;
+	while (nb / 10 > 0)
+	{
+		nb /= 10;
+		len++;
+	}
+	return (len);
+}
+
 int	ft_controlcenter(va_list	args, char type)
 {
 	int	contador;
+	int	nb;
 
 	contador = 0;
 	if (type == 'c')
@@ -27,7 +41,12 @@ int	ft_controlcenter(va_list	args, char type)
 	else if (type == 'x' || type == 'X')
 		contador += ft_hexdma(*(va_arg(args, unsigned int *)), type);
 	else if (type == 'd')
-		contador += ft_nbrd(va_arg(args, int));
+	{
+		nb = va_arg(args, int);
+		if (nb < 0 && contador++ >= 0)
+			write(1, "-", 1);
+		contador += nblen(ft_nbrd(nb));
+	}
 	else if (type == 'u')
 		contador += ft_nbru(va_arg(args, unsigned int));
 	else if (type == 'p')
@@ -39,13 +58,6 @@ int	ft_controlcenter(va_list	args, char type)
 	return (contador);
 }
 
-// int	ft_char(char c)
-
-// {
-// 	write(1, &c, 1);
-// 	return (1);
-// }
-
 int	ft_printf(char const *str, ...)
 {
 	int		i;
@@ -55,19 +67,18 @@ int	ft_printf(char const *str, ...)
 	va_start(args, str);
 	i = 0;
 	total = 0;
-	while (str[i])
+	while (str [i] != '\0')
 	{
-		if (str[i] == '%')
+		if (str[i] != '%')
+		{
+			total += ft_char(str[i]);
+		}
+		else
 		{
 			i++;
 			total += ft_controlcenter(args, str[i]);
-			if (str[i] != '\0')
-				i++;
 		}
-		else
-			total += ft_char(str[i]);
-		if (str[i] != '\0')
-			i++;
+		i++;
 	}
 	va_end(args);
 	return (total);

@@ -6,42 +6,42 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 19:37:53 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/19 00:33:23 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/21 17:31:45 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include "printf.h"
+#include "ft_printf.h"
 
-void	recursiva(unsigned long long nbr, char *base)
-{
-	if (nbr > 15)
-	{
-		recursiva(nbr / 16, base);
-		nbr %= 16;
-	}
-	write(1, &base[nbr], 1);
-}
+// void	recursiva(unsigned long long nbr, char *base)
+// {
+// 	if (nbr > 15)
+// 	{
+// 		recursiva(nbr / 16, base);
+// 		nbr %= 16;
+// 	}
+// 	write(1, &base[nbr], 1);
+// }
 
-int	count(unsigned long long n)
-{
-	size_t	size;
+// int	count(unsigned long long n)
+// {
+// 	size_t	size;
 
-	size = 0;
-	if (n > 15)
-	{
-		while (n != 0)
-		{
-			size++;
-			n /= 16;
-		}
-	}
-	else
-	{
-		size++;
-	}
-	return (size);
-}
+// 	size = 0;
+// 	if (n > 15)
+// 	{
+// 		while (n != 0)
+// 		{
+// 			size++;
+// 			n /= 16;
+// 		}
+// 	}
+// 	else
+// 	{
+// 		size++;
+// 	}
+// 	return (size);
+// }
 
 int	ft_ptro(unsigned long long n)
 {

@@ -1,7 +1,7 @@
 
 NAME = libftprintf.a
 CC = gcc
-CFLAGS = -Wall -Werror -Wextra
+CFLAGS = -Wall -Werror -Wextra -g
 RM = rm -f
 AR = ar
 ARS = $(AR) rcs
@@ -25,7 +25,7 @@ $(NAME): $(OBJS)
 	$(ARS) $@ $^
 
 %.o: %.c
-	$(CC) $(CFLAGS) -MMD -MP -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 -include $(DEPS)
 
