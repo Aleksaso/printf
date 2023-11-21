@@ -8,9 +8,8 @@ ARS = $(AR) rcs
 
 SRC = ft_printf.c \
 	ft_char.c \
-	ft_etri.c \
 	ft_hexdma.c \
-	ft_nbrd.c \
+	ft_putnbr.c \
 	ft_nbru.c \
 	ft_ptro.c \
 	ft_simbol.c \

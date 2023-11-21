@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_nbrd.c                                          :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 22:33:18 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/21 20:27:09 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/21 23:00:53 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,36 +14,63 @@
 #include <stdio.h>
 #include "ft_printf.h"
 
-int	ft_nbrd(int nb)
+int	ft_contador(int nb)
 {
-	int	x;
-	int	bak;
-	int	*total;
+	int	cnt;
 
-	x = 0;
-	bak = nb;
-	total = &x;
+	cnt = 0;
 	if (nb < 0)
-		return (ft_nbrd(-nb));
-	if (nb > 9)
 	{
-		ft_nbrd(nb / 10);
-		nb %= 10;
+		nb = nb * (-1);
+		cnt++;
 	}
-	*total += 1;
-	ft_char (nb + '0');
-	return (bak);
+	if (nb == 0)
+		cnt++;
+	while (nb != 0)
+	{
+		nb = nb / 10;
+		cnt++;
+	}
+	return (cnt);
 }
 
-// int	main(void)
+// int	ft_char(char c)
+
 // {
-// 	int	nb = -16544654;
-// 	int x;
-// 	printf("\nresultado es: %d\n", (nb));
-// 	x = ft_printf("%d", (nb));
-// // 	printf("%i\n", x);
-// 	//nb = ft_printf("%d", nb);
-// 	printf("\nTiene un total de :%i\n", x);
-// // }
-// 	return (0);
+// 	write(1, &c, 1);
+// 	return (1);
 // }
+
+int	ft_putnbr(int nb)
+{
+	int	x;
+
+	x = ft_contador(nb);
+	if (nb == -2147483648)
+	{
+		write(1, "-2147483648", 11);
+		return (11);
+	}
+	if (nb < 0)
+	{
+		ft_char('-');
+		nb *= -1;
+	}
+	if (nb > 9)
+	{
+		ft_putnbr(nb / 10);
+		nb %= 10;
+	}
+	ft_char (nb + '0');
+	return (x);
+}
+/*
+int	main(void)
+{
+	int y;
+
+	y = ft_putnbr(879);
+	ft_char('\n');
+	ft_putnbr(-2147483648);
+	printf("%i", y);
+}*/

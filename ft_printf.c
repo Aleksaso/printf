@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:14:07 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/21 20:29:52 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/21 22:56:26 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,22 +31,16 @@ int	nblen(int nb)
 int	ft_controlcenter(va_list	args, char type)
 {
 	int	contador;
-	int	nb;
 
 	contador = 0;
 	if (type == 'c')
 		contador += ft_char(va_arg(args, int));
 	else if (type == 'i')
-		contador += ft_etri(va_arg(args, int));
+		contador += ft_putnbr(va_arg(args, int));
 	else if (type == 'x' || type == 'X')
 		contador += ft_hexdma(*(va_arg(args, unsigned int *)), type);
 	else if (type == 'd')
-	{
-		nb = va_arg(args, int);
-		if (nb < 0 && contador++ >= 0)
-			write(1, "-", 1);
-		contador += nblen(ft_nbrd(nb));
-	}
+		contador += ft_putnbr(va_arg(args, int));
 	else if (type == 'u')
 		contador += ft_nbru(va_arg(args, unsigned int));
 	else if (type == 'p')
