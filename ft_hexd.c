@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_hexdma.c                                        :+:      :+:    :+:   */
+/*   ft_hexd.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 20:22:00 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/21 17:28:00 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/22 10:20:19 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	count(unsigned long long n)
 	return (size);
 }
 
-int	ft_hexdma(unsigned int n, char type)
+int	ft_hexd(unsigned int n, char type)
 {
 	char	*base;
 	long	num;
@@ -44,7 +44,7 @@ int	ft_hexdma(unsigned int n, char type)
 		base = "0123456789abcdef";
 	if (n > 15)
 	{
-		ft_hexdma(num / 16, type);
+		ft_hexd(num / 16, type);
 		num %= 16;
 	}
 	write(1, &base[num], 1);
@@ -61,21 +61,22 @@ void	recursiva(unsigned long long nbr, char *base)
 	write(1, &base[nbr], 1);
 }
 
-// int	ft_ptro(unsigned long long n)
-// {
-// 	char	*base;
+int	ft_ptro(unsigned long long n)
+{
+	char	*base;
 
-// 	base = "0123456789abcdef";
-// 	write(1, "0x", 2);
-// 	recursiva(n, base);
-// 	return (count(n) + 2);
-// }
+	base = "0123456789abcdef";
+	write(1, "0x", 2);
+	recursiva(n, base);
+	return (count(n) + 2);
+}
 
 // int	main(void)
 // {
-// 	int	num = 232;
-// 	//printf(" El resultado es: ");
-// 	ft_hexdma(num, 'X');
-// 	printf("\n");
-// 	return (0);
+// 	int	p;
+
+// 	p = ft_hexd(232, 'X');
+// 	ft_printf(" El resultado es: ");
+// 	ft_hexd(p, 'X');
+// 	ft_printf("\n");
 // }

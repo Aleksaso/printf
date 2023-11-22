@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:13:57 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/21 23:20:20 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/22 09:22:07 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 int		ft_printf(char const *str, ...);
 int		ft_char(char c);
-int		ft_hexdma(unsigned int n, char type);
+int		ft_hexd(unsigned int n, char type);
 int		ft_putnbr(int nb);
 int		ft_nbru(unsigned int nb);
 int		ft_ptro(unsigned long long n);
