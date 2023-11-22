@@ -6,13 +6,13 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 20:22:00 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/22 10:20:19 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/22 11:22:42 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	count(unsigned long long n)
+int	ft_counter(unsigned long long n)
 {
 	size_t	size;
 
@@ -48,7 +48,7 @@ int	ft_hexd(unsigned int n, char type)
 		num %= 16;
 	}
 	write(1, &base[num], 1);
-	return (count(n));
+	return (ft_counter(n));
 }
 
 void	recursiva(unsigned long long nbr, char *base)
@@ -68,7 +68,7 @@ int	ft_ptro(unsigned long long n)
 	base = "0123456789abcdef";
 	write(1, "0x", 2);
 	recursiva(n, base);
-	return (count(n) + 2);
+	return (ft_counter(n) + 2);
 }
 
 // int	main(void)

@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:13:57 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/22 10:37:08 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/22 11:46:05 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,10 @@ int		ft_nbru(unsigned int nb);
 int		ft_ptro(unsigned long long n);
 int		ft_simbol(void);
 int		ft_str(char *str);
-int		count(unsigned long long n);
-void	recursiva(unsigned long long nbr, char *base);
-int		ft_contador(int nb);
-int		ft_contadoru(unsigned int nb);
-int		count(unsigned long long n);
+int		ft_counter(unsigned long long n);
+int		ft_counter1(int nb);
+int		ft_counter2(unsigned int nb);
 int		ft_controlcenter(va_list	args, char type);
+void	recursiva(unsigned long long nbr, char *base);
 
 #endif

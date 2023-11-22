@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:16:51 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/21 23:30:42 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/22 11:45:37 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 // 	return (1);
 // }
 
-int	ft_contadoru(unsigned int nb)
+int	ft_counter2(unsigned int nb)
 {
 	int	cnt;
 
@@ -39,7 +39,7 @@ int	ft_nbru(unsigned int nb)
 {
 	int	res;
 
-	res = ft_contadoru(nb);
+	res = ft_counter2(nb);
 	if (nb > 9)
 	{
 		ft_nbru(nb / 10);

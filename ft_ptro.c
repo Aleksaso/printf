@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 19:37:53 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/21 17:31:45 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/22 11:26:24 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 // 	write(1, &base[nbr], 1);
 // }
 
-// int	count(unsigned long long n)
+// int	ft_counter(unsigned long long n)
 // {
 // 	size_t	size;
 
@@ -50,5 +50,5 @@ int	ft_ptro(unsigned long long n)
 	base = "0123456789abcdef";
 	write(1, "0x", 2);
 	recursiva(n, base);
-	return (count(n) + 2);
+	return (ft_counter(n) + 2);
 }

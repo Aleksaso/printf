@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 22:33:18 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/21 23:00:53 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/22 11:42:43 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include "ft_printf.h"
 
-int	ft_contador(int nb)
+int	ft_counter1(int nb)
 {
 	int	cnt;
 
@@ -45,7 +45,7 @@ int	ft_putnbr(int nb)
 {
 	int	x;
 
-	x = ft_contador(nb);
+	x = ft_counter1(nb);
 	if (nb == -2147483648)
 	{
 		write(1, "-2147483648", 11);
