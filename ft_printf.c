@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:14:07 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/22 10:19:23 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/22 10:30:43 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,3 @@ int	ft_printf(char const *str, ...)
 // 	ft_printf("%i %d \n", 184, 18);
 // 	printf("%p %p \n", (void *)-184, (void *)184);
 // }
-
-// {char_value = va_arg(args, int);
-// contador += ft_char(char_value);}

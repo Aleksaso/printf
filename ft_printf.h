@@ -6,7 +6,7 @@
 /*   By: asilva-o <asilva-o@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 22:13:57 by asilva-o          #+#    #+#             */
-/*   Updated: 2023/11/22 09:22:07 by asilva-o         ###   ########.fr       */
+/*   Updated: 2023/11/22 10:37:08 by asilva-o         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,7 @@ int		count(unsigned long long n);
 void	recursiva(unsigned long long nbr, char *base);
 int		ft_contador(int nb);
 int		ft_contadoru(unsigned int nb);
+int		count(unsigned long long n);
+int		ft_controlcenter(va_list	args, char type);
 
 #endif

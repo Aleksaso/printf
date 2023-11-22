@@ -11,6 +11,7 @@
 
 #Executables
 *.out
+*a.out
 
 #Files
 main.c
